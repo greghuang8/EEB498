@@ -1,0 +1,31 @@
+#PC_Urban correlation analysis
+cor_analysis <- read.csv("Correlation_analysis.csv")
+urban_cats <- read.csv("Urban_categories_20.csv")
+df <- data.frame(cor_analysis)
+key <- data.frame(urban_cats)
+
+
+df <- replace(df, df >= key[1,2] & df < key[1,3], 1)
+df <- replace(df, df >= key[2,2] & df < key[2,3], 2)
+df <- replace(df, df >= key[3,2] & df < key[3,3], 3)
+df <- replace(df, df >= key[4,2] & df < key[4,3], 4)
+df <- replace(df, df >= key[5,2] & df < key[5,3], 5)
+df <- replace(df, df >= key[6,2] & df < key[6,3], 6)
+df <- replace(df, df >= key[7,2] & df < key[7,3], 7)
+df <- replace(df, df >= key[8,2] & df < key[8,3], 8)
+df <- replace(df, df >= key[9,2] & df < key[9,3], 9)
+df <- replace(df, df >= key[10,2] & df < key[10,3], 10)
+df <- replace(df, df >= key[11,2] & df < key[11,3], 11)
+df <- replace(df, df >= key[12,2] & df < key[12,3], 12)
+df <- replace(df, df >= key[13,2] & df < key[13,3], 13)
+df <- replace(df, df >= key[14,2] & df < key[14,3], 14)
+df <- replace(df, df >= key[15,2] & df < key[15,3], 15)
+df <- replace(df, df >= key[16,2] & df < key[16,3], 16)
+df <- replace(df, df >= key[17,2] & df < key[17,3], 17)
+df <- replace(df, df >= key[18,2] & df < key[18,3], 18)
+df <- replace(df, df >= key[19,2] & df < key[19,3], 19)
+df <- replace(df, df >= key[20,2] & df < key[20,3], 20)
+
+cor <- cor(df,cor_analysis$pdSTD)
+
+write.csv(df, "categorized_urban.csv")
