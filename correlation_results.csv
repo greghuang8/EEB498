@@ -1,0 +1,3 @@
+,PC_Urban.PC1,PC_Urban.PC2,PC_Natural.PC1,PC_Natural.PC2,PC_Water.PC1,PC_Water.PC2,PC_Park.PC1,PC_Park.PC2,Urban_sitescores,Natural_sitescores,Water_Sitescores,Park_sitescores,PC_Habitat.PC1,PC_Habitat.PC2,Urban_sitescores,Natural_sitescores,Water_Sitescores,Park_sitescores
+pdSTD,0.332,-0.144,0.186,-0.0493,0.0635,-0.0929,-0.00165,-0.132,0.332,0.186,0.0635,-0.00165,0.179,-0.0832,-0.1,0.0398,0.0756,-0.0697
+pdSTD-log,0.664,0.000604,0.224,-0.0681,-0.00334,-0.108,0.321,-0.0544,0.664,0.224,0.00334,0.321,0.131,-0.41,-0.488,-0.041,0.008,-0.323
